@@ -1,0 +1,13 @@
+block vars
+    - var siteTitle = 'title of this site';
+    - var lang = 'ru';
+
+doctype html
+html(lang=lang)
+    head
+        meta(charset="UTF-8")
+        title #{siteTitle}
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap")
+        link(rel="stylesheet", href="/src/sass/base.scss")
+    body.body
+        block content

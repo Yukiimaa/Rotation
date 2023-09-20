@@ -1,0 +1,26 @@
+extends base
+
+block vars
+  - var siteTitle = 'Сайт 01';
+
+block content
+    .wrapper(style="width: 360px")
+      img.logo(src="/src/sass/logo.svg", width="176", height="86", alt="image description", style="text-align: center")
+
+      form(action="")
+        h2 Введите вашу почту и пароль для входа
+        .input
+          input(type="email", placeholder="Введите Email", required)
+          //- .error  
+          //-   span#email-error Неправильный формат email
+            
+        .input
+          input(type="password", placeholder="Введите пароль", required)
+          //- .error
+          //-   span#password-error Пароль должен содержать минимум 8 символов
+
+          img.logo(src="/src/sass/icon-eye-off.svg", width="24", height="24", alt="image description", style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%)")
+        .remember-forgot
+        
+          a(href="restore-pass.html") Восстановить пароль
+        button.btn(type="submit") Войти
