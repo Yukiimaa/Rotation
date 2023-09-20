@@ -1,0 +1,22 @@
+extends base
+
+block vars
+  - var siteTitle = 'Сайт 02';
+
+block content
+    .wrapper(style="width: 360px")
+      img.logo(src="/src/sass/logo.svg", width="176", height="86", alt="image description", style="text-align: center")
+      
+      form(action="")
+        h1 Восстановить пароль
+        h2 Введите вашу почту от аккаунта
+        .input
+          input(type="email", placeholder="Введите Email", required)
+        
+        .remember-forgot
+          a(href="#")
+
+        button.btn(type="submit") Восстановить пароль
+      p
+        | Перейти на 
+        a.home-page(href="index.html") страницу входа
